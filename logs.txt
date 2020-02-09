@@ -1,0 +1,38 @@
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: RSDP 0x00000000000F6A00 000024 (v02 PTLTD )
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: XSDT 0x000000002FEE865B 00005C (v01 INTEL  440BX    06040000 VMW  01324272)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: FACP 0x000000002FEFEE73 0000F4 (v04 INTEL  440BX    06040000 PTL  000F4240)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: DSDT 0x000000002FEEA6BB 0147B8 (v01 PTLTD  Custom   06040000 MSFT 03000001)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: FACS 0x000000002FEFFFC0 000040
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: FACS 0x000000002FEFFFC0 000040
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: BOOT 0x000000002FEEA693 000028 (v01 PTLTD  $SBFTBL$ 06040000  LTP 00000001)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: APIC 0x000000002FEE98BD 000742 (v01 PTLTD  ? APIC   06040000  LTP 00000000)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: MCFG 0x000000002FEE9881 00003C (v01 PTLTD  $PCITBL$ 06040000  LTP 00000001)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: SRAT 0x000000002FEE8757 0008A8 (v02 VMWARE MEMPLUG  06040000 VMW  00000001)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: HPET 0x000000002FEE871F 000038 (v01 VMWARE VMW HPET 06040000 VMW  00000001)
+Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: WAET 0x000000002FEE86F7 000028 (v01 VMWARE VMW WAET 06040000 VMW  00000001)
+Feb  9 11:56:25 escuelaing kernel: [    0.015293] ACPI: 1 ACPI AML tables successfully acquired and loaded
+Feb  9 11:56:25 escuelaing kernel: [    0.096840] perf_event_intel: CPUID marked event: 'cpu cycles' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.096993] perf_event_intel: CPUID marked event: 'instructions' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.097134] perf_event_intel: CPUID marked event: 'bus cycles' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.097276] perf_event_intel: CPUID marked event: 'cache references' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.097507] perf_event_intel: CPUID marked event: 'cache misses' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.097653] perf_event_intel: CPUID marked event: 'branch instructions' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.098510] perf_event_intel: CPUID marked event: 'branch misses' unavailable
+Feb  9 11:56:25 escuelaing kernel: [    0.127230] pmd_set_huge: Cannot satisfy [mem 0xf0000000-0xf0200000] with a huge-page mapping due to MTRR override.
+Feb  9 11:56:25 escuelaing kernel: [    0.418906] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
+Feb  9 11:56:25 escuelaing kernel: [    0.419188] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
+Feb  9 11:56:25 escuelaing kernel: [    0.676746] ACPI: Enabled 2 GPEs in block 00 to 0F
+Feb  9 11:56:25 escuelaing kernel: [    0.871010] OCFS2 User DLM kernel interface loaded
+Feb  9 11:56:25 escuelaing kernel: [    0.983734] scsi: <fdomain> Detection failed (no card)
+Feb  9 11:56:25 escuelaing kernel: [    0.983892] qla2xxx [0000:00:00.0]-0005: : QLogic Fibre Channel HBA Driver: 8.07.00.26-k.
+Feb  9 11:56:25 escuelaing kernel: [    0.984118] Emulex LightPulse Fibre Channel SCSI driver 11.0.0.0.
+Feb  9 11:56:25 escuelaing kernel: [    0.984248] Copyright(c) 2004-2015 Emulex.  All rights reserved.
+Feb  9 11:56:25 escuelaing kernel: [    1.003903] GDT-HA: Storage RAID Controller Driver. Version: 3.05
+Feb  9 11:56:25 escuelaing kernel: [    1.004066] 3ware Storage Controller device driver for Linux v1.26.02.003.
+Feb  9 11:56:25 escuelaing kernel: [    1.004216] 3ware 9000 Storage Controller device driver for Linux v2.26.02.014.
+Feb  9 11:56:25 escuelaing kernel: [    1.113554] sd 2:0:0:0: [sda] Assuming drive cache: write through
+Feb  9 11:56:25 escuelaing kernel: [    4.020706] EXT4-fs (sda1): couldn't mount as ext3 due to feature incompatibilities
+Feb  9 11:56:25 escuelaing kernel: [    6.926877] ACPI: Deprecated procfs I/F for AC is loaded, please retry with CONFIG_ACPI_PROCFS_POWER cleared
+Feb  9 11:56:25 escuelaing kernel: [    7.378677] mptbase: exports duplicate symbol ioc_list (owned by kernel)
+Feb  9 11:56:25 escuelaing kernel: [    7.963771] piix4_smbus 0000:00:07.3: SMBus Host Controller not enabled!
+Feb  9 11:56:30 escuelaing kernel: [   32.391752] mptbase: exports duplicate symbol ioc_list (owned by kernel)
