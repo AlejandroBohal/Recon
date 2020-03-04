@@ -21,6 +21,7 @@ do
 			clear
 			echo "Backup de archivo"
 			echo ""
+			bash crontabBackup.sh
 			bash backup.sh
 			;;
 		2)

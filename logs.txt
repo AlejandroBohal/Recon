@@ -1,38 +1,985 @@
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: RSDP 0x00000000000F6A00 000024 (v02 PTLTD )
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: XSDT 0x000000002FEE865B 00005C (v01 INTEL  440BX    06040000 VMW  01324272)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: FACP 0x000000002FEFEE73 0000F4 (v04 INTEL  440BX    06040000 PTL  000F4240)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: DSDT 0x000000002FEEA6BB 0147B8 (v01 PTLTD  Custom   06040000 MSFT 03000001)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: FACS 0x000000002FEFFFC0 000040
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: FACS 0x000000002FEFFFC0 000040
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: BOOT 0x000000002FEEA693 000028 (v01 PTLTD  $SBFTBL$ 06040000  LTP 00000001)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: APIC 0x000000002FEE98BD 000742 (v01 PTLTD  ? APIC   06040000  LTP 00000000)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: MCFG 0x000000002FEE9881 00003C (v01 PTLTD  $PCITBL$ 06040000  LTP 00000001)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: SRAT 0x000000002FEE8757 0008A8 (v02 VMWARE MEMPLUG  06040000 VMW  00000001)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: HPET 0x000000002FEE871F 000038 (v01 VMWARE VMW HPET 06040000 VMW  00000001)
-Feb  9 11:56:25 escuelaing kernel: [    0.000000] ACPI: WAET 0x000000002FEE86F7 000028 (v01 VMWARE VMW WAET 06040000 VMW  00000001)
-Feb  9 11:56:25 escuelaing kernel: [    0.015293] ACPI: 1 ACPI AML tables successfully acquired and loaded
-Feb  9 11:56:25 escuelaing kernel: [    0.096840] perf_event_intel: CPUID marked event: 'cpu cycles' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.096993] perf_event_intel: CPUID marked event: 'instructions' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.097134] perf_event_intel: CPUID marked event: 'bus cycles' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.097276] perf_event_intel: CPUID marked event: 'cache references' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.097507] perf_event_intel: CPUID marked event: 'cache misses' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.097653] perf_event_intel: CPUID marked event: 'branch instructions' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.098510] perf_event_intel: CPUID marked event: 'branch misses' unavailable
-Feb  9 11:56:25 escuelaing kernel: [    0.127230] pmd_set_huge: Cannot satisfy [mem 0xf0000000-0xf0200000] with a huge-page mapping due to MTRR override.
-Feb  9 11:56:25 escuelaing kernel: [    0.418906] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150930/hwxface-580)
-Feb  9 11:56:25 escuelaing kernel: [    0.419188] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S3_] (20150930/hwxface-580)
-Feb  9 11:56:25 escuelaing kernel: [    0.676746] ACPI: Enabled 2 GPEs in block 00 to 0F
-Feb  9 11:56:25 escuelaing kernel: [    0.871010] OCFS2 User DLM kernel interface loaded
-Feb  9 11:56:25 escuelaing kernel: [    0.983734] scsi: <fdomain> Detection failed (no card)
-Feb  9 11:56:25 escuelaing kernel: [    0.983892] qla2xxx [0000:00:00.0]-0005: : QLogic Fibre Channel HBA Driver: 8.07.00.26-k.
-Feb  9 11:56:25 escuelaing kernel: [    0.984118] Emulex LightPulse Fibre Channel SCSI driver 11.0.0.0.
-Feb  9 11:56:25 escuelaing kernel: [    0.984248] Copyright(c) 2004-2015 Emulex.  All rights reserved.
-Feb  9 11:56:25 escuelaing kernel: [    1.003903] GDT-HA: Storage RAID Controller Driver. Version: 3.05
-Feb  9 11:56:25 escuelaing kernel: [    1.004066] 3ware Storage Controller device driver for Linux v1.26.02.003.
-Feb  9 11:56:25 escuelaing kernel: [    1.004216] 3ware 9000 Storage Controller device driver for Linux v2.26.02.014.
-Feb  9 11:56:25 escuelaing kernel: [    1.113554] sd 2:0:0:0: [sda] Assuming drive cache: write through
-Feb  9 11:56:25 escuelaing kernel: [    4.020706] EXT4-fs (sda1): couldn't mount as ext3 due to feature incompatibilities
-Feb  9 11:56:25 escuelaing kernel: [    6.926877] ACPI: Deprecated procfs I/F for AC is loaded, please retry with CONFIG_ACPI_PROCFS_POWER cleared
-Feb  9 11:56:25 escuelaing kernel: [    7.378677] mptbase: exports duplicate symbol ioc_list (owned by kernel)
-Feb  9 11:56:25 escuelaing kernel: [    7.963771] piix4_smbus 0000:00:07.3: SMBus Host Controller not enabled!
-Feb  9 11:56:30 escuelaing kernel: [   32.391752] mptbase: exports duplicate symbol ioc_list (owned by kernel)
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020 (Ubuntu 5.3.0-29.31-generic 5.3.13)
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-29-generic root=UUID=f476c23d-1c23-40df-8b48-e4d8ea00b0b5 ro maybe-ubiquity
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] KERNEL supported cpus:
+Feb  9 22:47:10 escuelaing kernel: [    0.000000]   Intel GenuineIntel
+Feb  9 22:47:10 escuelaing kernel: [    0.000000]   AMD AuthenticAMD
+Feb  9 22:47:10 escuelaing kernel: [    0.000000]   Hygon HygonGenuine
+Feb  9 22:47:10 escuelaing kernel: [    0.000000]   Centaur CentaurHauls
+Feb  9 22:47:10 escuelaing kernel: [    0.000000]   zhaoxin   Shanghai  
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-provided physical RAM map:
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003ffeffff] usable
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x000000003fff0000-0x000000003fffffff] ACPI data
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] NX (Execute Disable) protection: active
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] SMBIOS 2.5 present.
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] Hypervisor detected: KVM
+Feb  9 22:47:10 escuelaing kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+Feb  9 22:47:10 escuelaing kernel: [    0.000001] kvm-clock: cpu 0, msr 3b801001, primary cpu clock
+Feb  9 22:47:10 escuelaing kernel: [    0.000001] kvm-clock: using sched offset of 11855464448 cycles
+Feb  9 22:47:10 escuelaing kernel: [    0.000005] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Feb  9 22:47:10 escuelaing kernel: [    0.000010] tsc: Detected 2400.002 MHz processor
+Feb  9 22:47:10 escuelaing kernel: [    0.005717] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.005721] e820: remove [mem 0x000a0000-0x000fffff] usable
+Feb  9 22:47:10 escuelaing kernel: [    0.005728] last_pfn = 0x3fff0 max_arch_pfn = 0x400000000
+Feb  9 22:47:10 escuelaing kernel: [    0.005746] MTRR default type: uncachable
+Feb  9 22:47:10 escuelaing kernel: [    0.005748] MTRR variable ranges disabled:
+Feb  9 22:47:10 escuelaing kernel: [    0.005752] Disabled
+Feb  9 22:47:10 escuelaing kernel: [    0.005754] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Feb  9 22:47:10 escuelaing kernel: [    0.005758] CPU MTRRs all blank - virtualized system.
+Feb  9 22:47:10 escuelaing kernel: [    0.005762] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+Feb  9 22:47:10 escuelaing kernel: [    0.005864] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.150290] check: Scanning 1 areas for low memory corruption
+Feb  9 22:47:10 escuelaing kernel: [    0.150330] BRK [0x3ba01000, 0x3ba01fff] PGTABLE
+Feb  9 22:47:10 escuelaing kernel: [    0.150334] BRK [0x3ba02000, 0x3ba02fff] PGTABLE
+Feb  9 22:47:10 escuelaing kernel: [    0.150335] BRK [0x3ba03000, 0x3ba03fff] PGTABLE
+Feb  9 22:47:10 escuelaing kernel: [    0.150406] BRK [0x3ba04000, 0x3ba04fff] PGTABLE
+Feb  9 22:47:10 escuelaing kernel: [    0.150627] BRK [0x3ba05000, 0x3ba05fff] PGTABLE
+Feb  9 22:47:10 escuelaing kernel: [    0.150693] RAMDISK: [mem 0x2eb89000-0x335bbfff]
+Feb  9 22:47:10 escuelaing kernel: [    0.150726] ACPI: Early table checksum verification disabled
+Feb  9 22:47:10 escuelaing kernel: [    0.150733] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Feb  9 22:47:10 escuelaing kernel: [    0.150739] ACPI: XSDT 0x000000003FFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Feb  9 22:47:10 escuelaing kernel: [    0.150748] ACPI: FACP 0x000000003FFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Feb  9 22:47:10 escuelaing kernel: [    0.150757] ACPI: DSDT 0x000000003FFF0470 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Feb  9 22:47:10 escuelaing kernel: [    0.150764] ACPI: FACS 0x000000003FFF0200 000040
+Feb  9 22:47:10 escuelaing kernel: [    0.150770] ACPI: FACS 0x000000003FFF0200 000040
+Feb  9 22:47:10 escuelaing kernel: [    0.150775] ACPI: APIC 0x000000003FFF0240 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Feb  9 22:47:10 escuelaing kernel: [    0.150782] ACPI: SSDT 0x000000003FFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Feb  9 22:47:10 escuelaing kernel: [    0.150797] ACPI: Local APIC address 0xfee00000
+Feb  9 22:47:10 escuelaing kernel: [    0.151127] No NUMA configuration found
+Feb  9 22:47:10 escuelaing kernel: [    0.151129] Faking a node at [mem 0x0000000000000000-0x000000003ffeffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151141] NODE_DATA(0) allocated [mem 0x3ffc5000-0x3ffeffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151449] Zone ranges:
+Feb  9 22:47:10 escuelaing kernel: [    0.151451]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151454]   DMA32    [mem 0x0000000001000000-0x000000003ffeffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151456]   Normal   empty
+Feb  9 22:47:10 escuelaing kernel: [    0.151458]   Device   empty
+Feb  9 22:47:10 escuelaing kernel: [    0.151459] Movable zone start for each node
+Feb  9 22:47:10 escuelaing kernel: [    0.151463] Early memory node ranges
+Feb  9 22:47:10 escuelaing kernel: [    0.151465]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151467]   node   0: [mem 0x0000000000100000-0x000000003ffeffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151471] Zeroed struct page in unavailable ranges: 98 pages
+Feb  9 22:47:10 escuelaing kernel: [    0.151472] Initmem setup node 0 [mem 0x0000000000001000-0x000000003ffeffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.151475] On node 0 totalpages: 262030
+Feb  9 22:47:10 escuelaing kernel: [    0.151477]   DMA zone: 64 pages used for memmap
+Feb  9 22:47:10 escuelaing kernel: [    0.151478]   DMA zone: 21 pages reserved
+Feb  9 22:47:10 escuelaing kernel: [    0.151479]   DMA zone: 3998 pages, LIFO batch:0
+Feb  9 22:47:10 escuelaing kernel: [    0.151569]   DMA32 zone: 4032 pages used for memmap
+Feb  9 22:47:10 escuelaing kernel: [    0.151570]   DMA32 zone: 258032 pages, LIFO batch:63
+Feb  9 22:47:10 escuelaing kernel: [    0.157778] ACPI: PM-Timer IO Port: 0x4008
+Feb  9 22:47:10 escuelaing kernel: [    0.157783] ACPI: Local APIC address 0xfee00000
+Feb  9 22:47:10 escuelaing kernel: [    0.157861] IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+Feb  9 22:47:10 escuelaing kernel: [    0.157866] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Feb  9 22:47:10 escuelaing kernel: [    0.157869] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Feb  9 22:47:10 escuelaing kernel: [    0.157872] ACPI: IRQ0 used by override.
+Feb  9 22:47:10 escuelaing kernel: [    0.157874] ACPI: IRQ9 used by override.
+Feb  9 22:47:10 escuelaing kernel: [    0.157878] Using ACPI (MADT) for SMP configuration information
+Feb  9 22:47:10 escuelaing kernel: [    0.157886] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Feb  9 22:47:10 escuelaing kernel: [    0.157913] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Feb  9 22:47:10 escuelaing kernel: [    0.157916] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.157917] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Feb  9 22:47:10 escuelaing kernel: [    0.157919] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.157922] [mem 0x40000000-0xfebfffff] available for PCI devices
+Feb  9 22:47:10 escuelaing kernel: [    0.157923] Booting paravirtualized kernel on KVM
+Feb  9 22:47:10 escuelaing kernel: [    0.157927] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Feb  9 22:47:10 escuelaing kernel: [    0.157933] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+Feb  9 22:47:10 escuelaing kernel: [    0.158073] percpu: Embedded 54 pages/cpu s184320 r8192 d28672 u2097152
+Feb  9 22:47:10 escuelaing kernel: [    0.158080] pcpu-alloc: s184320 r8192 d28672 u2097152 alloc=1*2097152
+Feb  9 22:47:10 escuelaing kernel: [    0.158081] pcpu-alloc: [0] 0 
+Feb  9 22:47:10 escuelaing kernel: [    0.158115] Built 1 zonelists, mobility grouping on.  Total pages: 257913
+Feb  9 22:47:10 escuelaing kernel: [    0.158117] Policy zone: DMA32
+Feb  9 22:47:10 escuelaing kernel: [    0.158119] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-29-generic root=UUID=f476c23d-1c23-40df-8b48-e4d8ea00b0b5 ro maybe-ubiquity
+Feb  9 22:47:10 escuelaing kernel: [    0.158251] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.158279] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.158332] mem auto-init: stack:off, heap alloc:on, heap free:off
+Feb  9 22:47:10 escuelaing kernel: [    0.158336] Calgary: detecting Calgary via BIOS EBDA area
+Feb  9 22:47:10 escuelaing kernel: [    0.158338] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Feb  9 22:47:10 escuelaing kernel: [    0.160777] Memory: 920616K/1048120K available (14339K kernel code, 2388K rwdata, 4728K rodata, 2668K init, 5056K bss, 127504K reserved, 0K cma-reserved)
+Feb  9 22:47:10 escuelaing kernel: [    0.160941] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Feb  9 22:47:10 escuelaing kernel: [    0.160963] Kernel/User page tables isolation: enabled
+Feb  9 22:47:10 escuelaing kernel: [    0.160985] ftrace: allocating 43225 entries in 169 pages
+Feb  9 22:47:10 escuelaing kernel: [    0.193850] rcu: Hierarchical RCU implementation.
+Feb  9 22:47:10 escuelaing kernel: [    0.193854] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+Feb  9 22:47:10 escuelaing kernel: [    0.193856] 	Tasks RCU enabled.
+Feb  9 22:47:10 escuelaing kernel: [    0.193858] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Feb  9 22:47:10 escuelaing kernel: [    0.193859] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Flush Journal to Persistent Storage...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Create Static Device Nodes in /dev.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting udev Kernel Device Manager...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Flush Journal to Persistent Storage.
+Feb  9 22:47:10 escuelaing systemd[1]: Started udev Kernel Device Manager.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Local Encrypted Volumes.
+Feb  9 22:47:10 escuelaing systemd-udevd[433]: Using default interface naming scheme 'v240'.
+Feb  9 22:47:10 escuelaing systemd-udevd[433]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb  9 22:47:10 escuelaing systemd-udevd[432]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Feb  9 22:47:10 escuelaing systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Sound Card.
+Feb  9 22:47:10 escuelaing systemd[1]: Started udev Wait for Complete Device Initialization.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Device-Mapper Multipath Device Controller...
+Feb  9 22:47:10 escuelaing multipathd[552]: --------start up--------
+Feb  9 22:47:10 escuelaing multipathd[552]: read /etc/multipath.conf
+Feb  9 22:47:10 escuelaing multipathd[552]: path checkers start up
+Feb  9 22:47:10 escuelaing systemd[1]: Started Device-Mapper Multipath Device Controller.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Local File Systems (Pre).
+Feb  9 22:47:10 escuelaing systemd[1]: Mounting Mount unit for lxd, revision 12211...
+Feb  9 22:47:10 escuelaing systemd[1]: Mounting Mount unit for core, revision 7917...
+Feb  9 22:47:10 escuelaing systemd[1]: Mounted Mount unit for lxd, revision 12211.
+Feb  9 22:47:10 escuelaing systemd[1]: Mounted Mount unit for core, revision 7917.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Local File Systems.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Create final runtime dir for shutdown pivot root...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Create Volatile Files and Directories...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Load AppArmor profiles...
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Set console font and keymap...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Create final runtime dir for shutdown pivot root.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Set console font and keymap.
+Feb  9 22:47:10 escuelaing systemd[1]: plymouth-read-write.service: Succeeded.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Restarting AppArmor
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Reloading AppArmor profiles
+Feb  9 22:47:10 escuelaing systemd[1]: Started Create Volatile Files and Directories.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Authentication service for virtual machines hosted on VMware being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Network Time Synchronization...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.activate line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.check-kernel line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.lxd line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.migrate line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.lxc line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.daemon line 543): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.buginfo line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing apparmor.systemd[566]: Warning from /var/lib/snapd/apparmor/profiles (/var/lib/snapd/apparmor/profiles/snap.lxd.benchmark line 495): Unconfined exec qualifier (ux) allows some dangerous environment variables to be passed to the unconfined process; 'man 5 apparmor.d' for details.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Load AppArmor profiles.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Service for virtual machines hosted on VMware being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Initial cloud-init job (pre-networking)...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Network Time Synchronization.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target System Time Set.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target System Time Synchronized.
+Feb  9 22:47:10 escuelaing cloud-init[599]: Cloud-init v. 19.2-36-g059d049c-0ubuntu3 running 'init-local' at Sun, 09 Feb 2020 22:47:01 +0000. Up 34.64 seconds.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Initial cloud-init job (pre-networking).
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Network (Pre).
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Network Service...
+Feb  9 22:47:10 escuelaing systemd-networkd[610]: Enumeration completed
+Feb  9 22:47:10 escuelaing systemd[1]: Started Network Service.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Network Name Resolution...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Wait for Network to be Configured...
+Feb  9 22:47:10 escuelaing systemd-networkd[610]: enp0s3: Gained carrier
+Feb  9 22:47:10 escuelaing systemd-networkd[610]: enp0s3: DHCPv4 address 10.0.2.15/24 via 10.0.2.2
+Feb  9 22:47:10 escuelaing systemd-timesyncd[576]: Network configuration changed, trying to establish connection.
+Feb  9 22:47:10 escuelaing systemd-networkd[610]: enp0s3: Gained IPv6LL
+Feb  9 22:47:10 escuelaing systemd-networkd[610]: enp0s3: Configured
+Feb  9 22:47:10 escuelaing systemd-timesyncd[576]: Network configuration changed, trying to establish connection.
+Feb  9 22:47:10 escuelaing systemd-networkd-wait-online[620]: managing: enp0s3
+Feb  9 22:47:10 escuelaing systemd-networkd-wait-online[620]: lo: link is ignored
+Feb  9 22:47:10 escuelaing systemd[1]: Started Wait for Network to be Configured.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Initial cloud-init job (metadata service crawler)...
+Feb  9 22:47:10 escuelaing systemd-resolved[619]: Positive Trust Anchors:
+Feb  9 22:47:10 escuelaing systemd-resolved[619]: . IN DS 19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+Feb  9 22:47:10 escuelaing systemd-resolved[619]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Feb  9 22:47:10 escuelaing systemd-resolved[619]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+Feb  9 22:47:10 escuelaing systemd-resolved[619]: Using system hostname 'escuelaing'.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Network Name Resolution.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Network.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Host and Network Name Lookups.
+Feb  9 22:47:10 escuelaing cloud-init[622]: Cloud-init v. 19.2-36-g059d049c-0ubuntu3 running 'init' at Sun, 09 Feb 2020 22:47:05 +0000. Up 38.23 seconds.
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: | Device |  Up  |           Address           |      Mask     | Scope  |     Hw-Address    |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: | enp0s3 | True |          10.0.2.15          | 255.255.255.0 | global | 08:00:27:f7:51:16 |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: | enp0s3 | True | fe80::a00:27ff:fef7:5116/64 |       .       |  link  | 08:00:27:f7:51:16 |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   lo   | True |          127.0.0.1          |   255.0.0.0   |  host  |         .         |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   lo   | True |           ::1/128           |       .       |  host  |         .         |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +-------+-------------+---------+-----------+-------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +-------+-------------+---------+-----------+-------+
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   1   |  fe80::/64  |    ::   |   enp0s3  |   U   |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   3   |    local    |    ::   |   enp0s3  |   U   |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
+Feb  9 22:47:10 escuelaing cloud-init[622]: ci-info: +-------+-------------+---------+-----------+-------+
+Feb  9 22:47:10 escuelaing systemd[1]: Started Initial cloud-init job (metadata service crawler).
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Network is Online.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Login to default iSCSI targets being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Availability of block devices...
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Remote File Systems (Pre).
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Remote File Systems.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Cloud-config availability.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target System Initialization.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Discard unused blocks once a week.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Daily apt download activities.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Daily apt upgrade and clean activities.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Daily rotation of log files.
+Feb  9 22:47:10 escuelaing systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Message of the Day.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Unix socket for apport crash forwarding being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Feb  9 22:47:10 escuelaing systemd[1]: Listening on UUID daemon activation socket.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Timer to automatically fetch and run repair assertions being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Listening on D-Bus System Message Bus Socket.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Daily Cleanup of Temporary Directories.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Paths.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Daily man-db regeneration.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Timers.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Socket activation for snappy daemon.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Availability of block devices.
+Feb  9 22:47:10 escuelaing systemd[1]: Listening on Socket activation for snappy daemon.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Sockets.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Basic System.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in fast remote file copy program daemon being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting LSB: automatic crash report generation...
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Daily man-db regeneration...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting System Logging Service...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Save initial kernel messages after boot.
+Feb  9 22:47:10 escuelaing systemd[1]: Started irqbalance daemon.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Rotate log files...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting LSB: Record successful boot for GRUB...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Deferred execution scheduler...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+Feb  9 22:47:10 escuelaing systemd[1]: Started D-Bus System Message Bus.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Pollinate to seed the pseudo random number generator being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Secure Boot updates for DB and DBX being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting GRUB failed boot detection...
+Feb  9 22:47:10 escuelaing systemd[1]: Started Regular background program processing daemon.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Service for snap application lxd.activate...
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Automatically repair incorrect owner/permissions on core devices being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Thermal Daemon Service...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Permit User Sessions...
+Feb  9 22:47:10 escuelaing systemd[1]: Condition check resulted in Set the CPU Frequency Scaling governor being skipped.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Login Service...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Accounts Service...
+Feb  9 22:47:10 escuelaing /usr/sbin/irqbalance: Balancing is ineffective on systems with a single cpu.  Shutting down
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Snappy daemon...
+Feb  9 22:47:10 escuelaing systemd[1]: irqbalance.service: Succeeded.
+Feb  9 22:47:10 escuelaing cron[651]: (CRON) INFO (pidfile fd = 3)
+Feb  9 22:47:10 escuelaing systemd[1]: Started Deferred execution scheduler.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Permit User Sessions.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Hold until boot process finishes up...
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Terminate Plymouth Boot Screen...
+Feb  9 22:47:10 escuelaing systemd[1]: plymouth-quit-wait.service: Succeeded.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Hold until boot process finishes up.
+Feb  9 22:47:10 escuelaing systemd[1]: plymouth-quit.service: Succeeded.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Terminate Plymouth Boot Screen.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Set console scheme...
+Feb  9 22:47:10 escuelaing grub-common[642]:  * Recording successful boot for GRUB
+Feb  9 22:47:10 escuelaing apport[634]:  * Starting automatic crash report generation: apport
+Feb  9 22:47:10 escuelaing apport[634]:    ...done.
+Feb  9 22:47:10 escuelaing cron[651]: (CRON) INFO (Running @reboot jobs)
+Feb  9 22:47:10 escuelaing grub-common[642]:    ...done.
+Feb  9 22:47:08 escuelaing dbus-daemon[647]: dbus[647]: Unknown group "power" in message bus configuration file
+Feb  9 22:47:10 escuelaing dbus-daemon[647]: [system] AppArmor D-Bus mediation is enabled
+Feb  9 22:47:10 escuelaing systemd[1]: Started Login Service.
+Feb  9 22:47:10 escuelaing systemd[1]: Started LSB: automatic crash report generation.
+Feb  9 22:47:10 escuelaing systemd[1]: Started LSB: Record successful boot for GRUB.
+Feb  9 22:47:10 escuelaing systemd[1]: e2scrub_reap.service: Succeeded.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Remove Stale Online ext4 Metadata Check Snapshots.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Set console scheme.
+Feb  9 22:47:10 escuelaing rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.1901.0]
+Feb  9 22:47:10 escuelaing rsyslogd: rsyslogd's groupid changed to 110
+Feb  9 22:47:10 escuelaing rsyslogd: rsyslogd's userid changed to 104
+Feb  9 22:47:10 escuelaing rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="637" x-info="https://www.rsyslog.com"] start
+Feb  9 22:47:10 escuelaing kernel: [    0.199615] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 16
+Feb  9 22:47:10 escuelaing kernel: [    0.199905] random: crng done (trusting CPU's manufacturer)
+Feb  9 22:47:10 escuelaing kernel: [    0.213444] Console: colour VGA+ 80x25
+Feb  9 22:47:10 escuelaing kernel: [    0.251325] printk: console [tty0] enabled
+Feb  9 22:47:10 escuelaing kernel: [    0.251641] ACPI: Core revision 20190703
+Feb  9 22:47:10 escuelaing kernel: [    0.252061] APIC: Switch to symmetric I/O mode setup
+Feb  9 22:47:10 escuelaing kernel: [    0.252729] x2apic enabled
+Feb  9 22:47:10 escuelaing kernel: [    0.253328] Switched APIC routing to physical x2apic.
+Feb  9 22:47:10 escuelaing kernel: [    0.255242] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Feb  9 22:47:10 escuelaing kernel: [    0.255639] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x22983938a92, max_idle_ns: 440795216168 ns
+Feb  9 22:47:10 escuelaing kernel: [    0.256240] Calibrating delay loop (skipped) preset value.. 4800.00 BogoMIPS (lpj=9600008)
+Feb  9 22:47:10 escuelaing kernel: [    0.256751] pid_max: default: 32768 minimum: 301
+Feb  9 22:47:10 escuelaing kernel: [    0.257098] LSM: Security Framework initializing
+Feb  9 22:47:10 escuelaing kernel: [    0.257421] Yama: becoming mindful.
+Feb  9 22:47:10 escuelaing kernel: [    0.257702] AppArmor: AppArmor initialized
+Feb  9 22:47:10 escuelaing kernel: [    0.258069] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.258547] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.260427] *** VALIDATE proc ***
+Feb  9 22:47:10 escuelaing kernel: [    0.264302] *** VALIDATE cgroup1 ***
+Feb  9 22:47:10 escuelaing kernel: [    0.264697] *** VALIDATE cgroup2 ***
+Feb  9 22:47:10 escuelaing kernel: [    0.265379] process: using mwait in idle threads
+Feb  9 22:47:10 escuelaing kernel: [    0.265921] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Feb  9 22:47:10 escuelaing kernel: [    0.266416] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Feb  9 22:47:10 escuelaing kernel: [    0.266995] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Feb  9 22:47:10 escuelaing kernel: [    0.267695] Spectre V2 : Mitigation: Full generic retpoline
+Feb  9 22:47:10 escuelaing kernel: [    0.268150] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Feb  9 22:47:10 escuelaing kernel: [    0.268236] Speculative Store Bypass: Vulnerable
+Feb  9 22:47:10 escuelaing kernel: [    0.268236] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Feb  9 22:47:10 escuelaing kernel: [    0.278274] Freeing SMP alternatives memory: 36K
+Feb  9 22:47:10 escuelaing kernel: [    0.389613] smpboot: CPU0: Intel(R) Core(TM) i3-7100U CPU @ 2.40GHz (family: 0x6, model: 0x8e, stepping: 0x9)
+Feb  9 22:47:10 escuelaing kernel: [    0.390362] Performance Events: unsupported p6 CPU model 142 no PMU driver, software events only.
+Feb  9 22:47:10 escuelaing kernel: [    0.390953] rcu: Hierarchical SRCU implementation.
+Feb  9 22:47:10 escuelaing kernel: [    0.391937] NMI watchdog: Perf NMI watchdog permanently disabled
+Feb  9 22:47:10 escuelaing kernel: [    0.392236] smp: Bringing up secondary CPUs ...
+Feb  9 22:47:10 escuelaing kernel: [    0.392236] smp: Brought up 1 node, 1 CPU
+Feb  9 22:47:10 escuelaing kernel: [    0.392236] smpboot: Max logical packages: 1
+Feb  9 22:47:10 escuelaing kernel: [    0.392236] smpboot: Total of 1 processors activated (4800.00 BogoMIPS)
+Feb  9 22:47:10 escuelaing kernel: [    0.392236] devtmpfs: initialized
+Feb  9 22:47:10 escuelaing kernel: [    0.392236] x86/mm: Memory block size: 128MB
+Feb  9 22:47:10 escuelaing kernel: [    0.392384] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Feb  9 22:47:10 escuelaing kernel: [    0.392985] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.393448] pinctrl core: initialized pinctrl subsystem
+Feb  9 22:47:10 escuelaing kernel: [    0.393947] PM: RTC time: 22:46:27, date: 2020-02-09
+Feb  9 22:47:10 escuelaing kernel: [    0.394401] NET: Registered protocol family 16
+Feb  9 22:47:10 escuelaing kernel: [    0.394811] audit: initializing netlink subsys (disabled)
+Feb  9 22:47:10 escuelaing kernel: [    0.396289] EISA bus registered
+Feb  9 22:47:10 escuelaing kernel: [    0.396802] cpuidle: using governor ladder
+Feb  9 22:47:10 escuelaing kernel: [    0.397111] cpuidle: using governor menu
+Feb  9 22:47:10 escuelaing kernel: [    0.397604] ACPI: bus type PCI registered
+Feb  9 22:47:10 escuelaing kernel: [    0.397913] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Feb  9 22:47:10 escuelaing kernel: [    0.398525] PCI: Using configuration type 1 for base access
+Feb  9 22:47:10 escuelaing kernel: [    0.400253] audit: type=2000 audit(1581288400.978:1): state=initialized audit_enabled=0 res=1
+Feb  9 22:47:10 escuelaing kernel: [    0.401753] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Feb  9 22:47:10 escuelaing kernel: [    0.404373] ACPI: Added _OSI(Module Device)
+Feb  9 22:47:10 escuelaing kernel: [    0.404673] ACPI: Added _OSI(Processor Device)
+Feb  9 22:47:10 escuelaing kernel: [    0.404991] ACPI: Added _OSI(3.0 _SCP Extensions)
+Feb  9 22:47:10 escuelaing kernel: [    0.405300] ACPI: Added _OSI(Processor Aggregator Device)
+Feb  9 22:47:10 escuelaing kernel: [    0.405636] ACPI: Added _OSI(Linux-Dell-Video)
+Feb  9 22:47:10 escuelaing kernel: [    0.405951] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Feb  9 22:47:10 escuelaing kernel: [    0.406283] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Feb  9 22:47:10 escuelaing kernel: [    0.410873] ACPI: 2 ACPI AML tables successfully acquired and loaded
+Feb  9 22:47:10 escuelaing kernel: [    0.415054] ACPI: Interpreter enabled
+Feb  9 22:47:10 escuelaing kernel: [    0.415527] ACPI: (supports S0 S5)
+Feb  9 22:47:10 escuelaing kernel: [    0.415810] ACPI: Using IOAPIC for interrupt routing
+Feb  9 22:47:10 escuelaing kernel: [    0.416236] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Feb  9 22:47:10 escuelaing kernel: [    0.416448] ACPI: Enabled 2 GPEs in block 00 to 07
+Feb  9 22:47:10 escuelaing kernel: [    0.426662] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Feb  9 22:47:10 escuelaing kernel: [    0.427048] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+Feb  9 22:47:10 escuelaing kernel: [    0.428396] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Feb  9 22:47:10 escuelaing kernel: [    0.428988] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Feb  9 22:47:10 escuelaing kernel: [    0.430468] PCI host bridge to bus 0000:00
+Feb  9 22:47:10 escuelaing kernel: [    0.430947] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Feb  9 22:47:10 escuelaing kernel: [    0.431418] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Feb  9 22:47:10 escuelaing kernel: [    0.431870] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Feb  9 22:47:10 escuelaing kernel: [    0.432236] pci_bus 0000:00: root bus resource [mem 0x40000000-0xfdffffff window]
+Feb  9 22:47:10 escuelaing kernel: [    0.432245] pci_bus 0000:00: root bus resource [bus 00-ff]
+Feb  9 22:47:10 escuelaing kernel: [    0.432683] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Feb  9 22:47:10 escuelaing kernel: [    0.435250] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Feb  9 22:47:10 escuelaing kernel: [    0.437340] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+Feb  9 22:47:10 escuelaing kernel: [    0.438257] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+Feb  9 22:47:10 escuelaing kernel: [    0.438834] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Feb  9 22:47:10 escuelaing kernel: [    0.439244] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Feb  9 22:47:10 escuelaing kernel: [    0.439625] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Feb  9 22:47:10 escuelaing kernel: [    0.440033] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Feb  9 22:47:10 escuelaing kernel: [    0.441103] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+Feb  9 22:47:10 escuelaing kernel: [    0.442664] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+Feb  9 22:47:10 escuelaing kernel: [    0.444593] pci 0000:00:02.0: reg 0x14: [mem 0xf0000000-0xf0ffffff pref]
+Feb  9 22:47:10 escuelaing kernel: [    0.445776] pci 0000:00:02.0: reg 0x18: [mem 0xf1000000-0xf11fffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.451771] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+Feb  9 22:47:10 escuelaing kernel: [    0.452947] pci 0000:00:03.0: reg 0x10: [mem 0xf1200000-0xf121ffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.454519] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+Feb  9 22:47:10 escuelaing kernel: [    0.458269] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+Feb  9 22:47:10 escuelaing kernel: [    0.459283] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+Feb  9 22:47:10 escuelaing kernel: [    0.460340] pci 0000:00:04.0: reg 0x14: [mem 0xf1400000-0xf17fffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.461394] pci 0000:00:04.0: reg 0x18: [mem 0xf1800000-0xf1803fff pref]
+Feb  9 22:47:10 escuelaing kernel: [    0.466453] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+Feb  9 22:47:10 escuelaing kernel: [    0.467028] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+Feb  9 22:47:10 escuelaing kernel: [    0.467484] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+Feb  9 22:47:10 escuelaing kernel: [    0.469647] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+Feb  9 22:47:10 escuelaing kernel: [    0.470976] pci 0000:00:06.0: reg 0x10: [mem 0xf1804000-0xf1804fff]
+Feb  9 22:47:10 escuelaing kernel: [    0.475401] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+Feb  9 22:47:10 escuelaing kernel: [    0.476723] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Feb  9 22:47:10 escuelaing kernel: [    0.477210] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Feb  9 22:47:10 escuelaing kernel: [    0.480748] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+Feb  9 22:47:10 escuelaing kernel: [    0.482352] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+Feb  9 22:47:10 escuelaing kernel: [    0.485147] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+Feb  9 22:47:10 escuelaing kernel: [    0.486100] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+Feb  9 22:47:10 escuelaing kernel: [    0.487031] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+Feb  9 22:47:10 escuelaing kernel: [    0.487943] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+Feb  9 22:47:10 escuelaing kernel: [    0.488761] pci 0000:00:0d.0: reg 0x24: [mem 0xf1806000-0xf1807fff]
+Feb  9 22:47:10 escuelaing kernel: [    0.503491] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+Feb  9 22:47:10 escuelaing kernel: [    0.504422] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+Feb  9 22:47:10 escuelaing kernel: [    0.505098] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+Feb  9 22:47:10 escuelaing kernel: [    0.505657] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+Feb  9 22:47:10 escuelaing kernel: [    0.506836] SCSI subsystem initialized
+Feb  9 22:47:10 escuelaing kernel: [    0.507245] libata version 3.00 loaded.
+Feb  9 22:47:10 escuelaing kernel: [    0.507328] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Feb  9 22:47:10 escuelaing kernel: [    0.507699] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Feb  9 22:47:10 escuelaing kernel: [    0.508218] pci 0000:00:02.0: vgaarb: bridge control possible
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] vgaarb: loaded
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] ACPI: bus type USB registered
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] usbcore: registered new interface driver usbfs
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] usbcore: registered new interface driver hub
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] usbcore: registered new device driver usb
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] pps_core: LinuxPPS API ver. 1 registered
+Feb  9 22:47:10 escuelaing kernel: [    0.508236] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Feb  9 22:47:10 escuelaing kernel: [    0.508245] PTP clock support registered
+Feb  9 22:47:10 escuelaing kernel: [    0.508579] EDAC MC: Ver: 3.0.0
+Feb  9 22:47:10 escuelaing kernel: [    0.512374] PCI: Using ACPI for IRQ routing
+Feb  9 22:47:10 escuelaing kernel: [    0.512666] PCI: pci_cache_line_size set to 64 bytes
+Feb  9 22:47:10 escuelaing kernel: [    0.512950] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.512955] e820: reserve RAM buffer [mem 0x3fff0000-0x3fffffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.513110] NetLabel: Initializing
+Feb  9 22:47:10 escuelaing kernel: [    0.513370] NetLabel:  domain hash size = 128
+Feb  9 22:47:10 escuelaing kernel: [    0.513675] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Feb  9 22:47:10 escuelaing kernel: [    0.514215] NetLabel:  unlabeled traffic allowed by default
+Feb  9 22:47:10 escuelaing kernel: [    0.516274] clocksource: Switched to clocksource kvm-clock
+Feb  9 22:47:10 escuelaing kernel: [    0.544946] VFS: Disk quotas dquot_6.6.0
+Feb  9 22:47:10 escuelaing kernel: [    0.545254] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Feb  9 22:47:10 escuelaing kernel: [    0.545677] *** VALIDATE hugetlbfs ***
+Feb  9 22:47:10 escuelaing kernel: [    0.546053] AppArmor: AppArmor Filesystem Enabled
+Feb  9 22:47:10 escuelaing kernel: [    0.546396] pnp: PnP ACPI init
+Feb  9 22:47:10 escuelaing kernel: [    0.546784] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+Feb  9 22:47:10 escuelaing kernel: [    0.546967] pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+Feb  9 22:47:10 escuelaing kernel: [    0.549565] pnp: PnP ACPI: found 2 devices
+Feb  9 22:47:10 escuelaing kernel: [    0.551899] thermal_sys: Registered thermal governor 'fair_share'
+Feb  9 22:47:10 escuelaing kernel: [    0.551901] thermal_sys: Registered thermal governor 'bang_bang'
+Feb  9 22:47:10 escuelaing kernel: [    0.552650] thermal_sys: Registered thermal governor 'step_wise'
+Feb  9 22:47:10 escuelaing kernel: [    0.553296] thermal_sys: Registered thermal governor 'user_space'
+Feb  9 22:47:10 escuelaing kernel: [    0.553825] thermal_sys: Registered thermal governor 'power_allocator'
+Feb  9 22:47:10 escuelaing kernel: [    0.559031] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Feb  9 22:47:10 escuelaing kernel: [    0.560041] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Feb  9 22:47:10 escuelaing kernel: [    0.560442] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Feb  9 22:47:10 escuelaing kernel: [    0.560809] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Feb  9 22:47:10 escuelaing kernel: [    0.561202] pci_bus 0000:00: resource 7 [mem 0x40000000-0xfdffffff window]
+Feb  9 22:47:10 escuelaing kernel: [    0.561782] NET: Registered protocol family 2
+Feb  9 22:47:10 escuelaing kernel: [    0.562243] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.562805] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.563406] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.565472] TCP: Hash tables configured (established 8192 bind 8192)
+Feb  9 22:47:10 escuelaing kernel: [    0.566141] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.566613] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+Feb  9 22:47:10 escuelaing kernel: [    0.567149] NET: Registered protocol family 1
+Feb  9 22:47:10 escuelaing kernel: [    0.567462] NET: Registered protocol family 44
+Feb  9 22:47:10 escuelaing kernel: [    0.567802] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Feb  9 22:47:10 escuelaing kernel: [    0.568499] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Feb  9 22:47:10 escuelaing kernel: [    0.568955] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Feb  9 22:47:10 escuelaing kernel: [    0.571860] PCI: CLS 0 bytes, default 64
+Feb  9 22:47:10 escuelaing kernel: [    0.572215] Trying to unpack rootfs image as initramfs...
+Feb  9 22:47:10 escuelaing kernel: [    1.367758] Freeing initrd memory: 75980K
+Feb  9 22:47:10 escuelaing kernel: [    1.368160] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x22983938a92, max_idle_ns: 440795216168 ns
+Feb  9 22:47:10 escuelaing kernel: [    1.368795] clocksource: Switched to clocksource tsc
+Feb  9 22:47:10 escuelaing kernel: [    1.369108] platform rtc_cmos: registered platform RTC device (no PNP device found)
+Feb  9 22:47:10 escuelaing kernel: [    1.369108] check: Scanning for low memory corruption every 60 seconds
+Feb  9 22:47:10 escuelaing kernel: [    1.372348] Initialise system trusted keyrings
+Feb  9 22:47:10 escuelaing kernel: [    1.372673] Key type blacklist registered
+Feb  9 22:47:10 escuelaing kernel: [    1.372987] workingset: timestamp_bits=36 max_order=18 bucket_order=0
+Feb  9 22:47:10 escuelaing kernel: [    1.375451] zbud: loaded
+Feb  9 22:47:10 escuelaing kernel: [    1.376280] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Feb  9 22:47:10 escuelaing kernel: [    1.376931] fuse: init (API version 7.31)
+Feb  9 22:47:10 escuelaing kernel: [    1.377402] Platform Keyring initialized
+Feb  9 22:47:10 escuelaing kernel: [    1.383510] Key type asymmetric registered
+Feb  9 22:47:10 escuelaing kernel: [    1.383838] Asymmetric key parser 'x509' registered
+Feb  9 22:47:10 escuelaing kernel: [    1.384175] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+Feb  9 22:47:10 escuelaing kernel: [    1.384452] io scheduler mq-deadline registered
+Feb  9 22:47:10 escuelaing kernel: [    1.385580] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Feb  9 22:47:10 escuelaing kernel: [    1.386245] ACPI: AC Adapter [AC] (on-line)
+Feb  9 22:47:10 escuelaing kernel: [    1.386636] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Feb  9 22:47:10 escuelaing kernel: [    1.387374] ACPI: Power Button [PWRF]
+Feb  9 22:47:10 escuelaing kernel: [    1.388125] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Feb  9 22:47:10 escuelaing kernel: [    1.392730] ACPI: Sleep Button [SLPF]
+Feb  9 22:47:10 escuelaing kernel: [    1.395795] battery: ACPI: Battery Slot [BAT0] (battery present)
+Feb  9 22:47:10 escuelaing kernel: [    1.396327] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Feb  9 22:47:10 escuelaing kernel: [    1.399588] Linux agpgart interface v0.103
+Feb  9 22:47:10 escuelaing kernel: [    1.402256] loop: module loaded
+Feb  9 22:47:10 escuelaing kernel: [    1.402885] ata_piix 0000:00:01.1: version 2.13
+Feb  9 22:47:10 escuelaing kernel: [    1.403456] scsi host0: ata_piix
+Feb  9 22:47:10 escuelaing kernel: [    1.403864] scsi host1: ata_piix
+Feb  9 22:47:10 escuelaing kernel: [    1.404165] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+Feb  9 22:47:10 escuelaing kernel: [    1.404579] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+Feb  9 22:47:10 escuelaing kernel: [    1.405831] libphy: Fixed MDIO Bus: probed
+Feb  9 22:47:10 escuelaing kernel: [    1.406127] tun: Universal TUN/TAP device driver, 1.6
+Feb  9 22:47:10 escuelaing kernel: [    1.406501] PPP generic driver version 2.4.2
+Feb  9 22:47:10 escuelaing kernel: [    1.406906] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Feb  9 22:47:10 escuelaing kernel: [    1.407484] ehci-pci: EHCI PCI platform driver
+Feb  9 22:47:10 escuelaing kernel: [    1.408137] ehci-platform: EHCI generic platform driver
+Feb  9 22:47:10 escuelaing kernel: [    1.409440] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Feb  9 22:47:10 escuelaing kernel: [    1.410010] ohci-pci: OHCI PCI platform driver
+Feb  9 22:47:10 escuelaing kernel: [    1.412019] ohci-pci 0000:00:06.0: OHCI PCI host controller
+Feb  9 22:47:10 escuelaing kernel: [    1.412629] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+Feb  9 22:47:10 escuelaing kernel: [    1.414333] ohci-pci 0000:00:06.0: irq 22, io mem 0xf1804000
+Feb  9 22:47:10 escuelaing kernel: [    1.473061] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.03
+Feb  9 22:47:10 escuelaing kernel: [    1.473581] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Feb  9 22:47:10 escuelaing kernel: [    1.474103] usb usb1: Product: OHCI PCI host controller
+Feb  9 22:47:10 escuelaing kernel: [    1.474434] usb usb1: Manufacturer: Linux 5.3.0-29-generic ohci_hcd
+Feb  9 22:47:10 escuelaing kernel: [    1.474802] usb usb1: SerialNumber: 0000:00:06.0
+Feb  9 22:47:10 escuelaing kernel: [    1.475269] hub 1-0:1.0: USB hub found
+Feb  9 22:47:10 escuelaing kernel: [    1.475559] hub 1-0:1.0: 12 ports detected
+Feb  9 22:47:10 escuelaing kernel: [    1.476656] ohci-platform: OHCI generic platform driver
+Feb  9 22:47:10 escuelaing kernel: [    1.477025] uhci_hcd: USB Universal Host Controller Interface driver
+Feb  9 22:47:10 escuelaing kernel: [    1.477465] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Feb  9 22:47:10 escuelaing kernel: [    1.478559] serio: i8042 KBD port at 0x60,0x64 irq 1
+Feb  9 22:47:10 escuelaing kernel: [    1.478917] serio: i8042 AUX port at 0x60,0x64 irq 12
+Feb  9 22:47:10 escuelaing kernel: [    1.479328] mousedev: PS/2 mouse device common for all mice
+Feb  9 22:47:10 escuelaing kernel: [    1.480786] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Feb  9 22:47:10 escuelaing kernel: [    1.483166] rtc_cmos rtc_cmos: registered as rtc0
+Feb  9 22:47:10 escuelaing kernel: [    1.483513] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Feb  9 22:47:10 escuelaing kernel: [    1.483924] i2c /dev entries driver
+Feb  9 22:47:10 escuelaing kernel: [    1.484515] device-mapper: uevent: version 1.0.3
+Feb  9 22:47:10 escuelaing kernel: [    1.484985] device-mapper: ioctl: 4.40.0-ioctl (2019-01-18) initialised: dm-devel@redhat.com
+Feb  9 22:47:10 escuelaing kernel: [    1.485661] platform eisa.0: Probing EISA bus 0
+Feb  9 22:47:10 escuelaing kernel: [    1.485973] platform eisa.0: EISA: Cannot allocate resource for mainboard
+Feb  9 22:47:10 escuelaing kernel: [    1.486376] platform eisa.0: Cannot allocate resource for EISA slot 1
+Feb  9 22:47:10 escuelaing kernel: [    1.486791] platform eisa.0: Cannot allocate resource for EISA slot 2
+Feb  9 22:47:10 escuelaing kernel: [    1.487166] platform eisa.0: Cannot allocate resource for EISA slot 3
+Feb  9 22:47:10 escuelaing kernel: [    1.487556] platform eisa.0: Cannot allocate resource for EISA slot 4
+Feb  9 22:47:10 escuelaing kernel: [    1.487932] platform eisa.0: Cannot allocate resource for EISA slot 5
+Feb  9 22:47:10 escuelaing kernel: [    1.488307] platform eisa.0: Cannot allocate resource for EISA slot 6
+Feb  9 22:47:10 escuelaing kernel: [    1.488388] platform eisa.0: Cannot allocate resource for EISA slot 7
+Feb  9 22:47:10 escuelaing kernel: [    1.488388] platform eisa.0: Cannot allocate resource for EISA slot 8
+Feb  9 22:47:10 escuelaing kernel: [    1.488388] platform eisa.0: EISA: Detected 0 cards
+Feb  9 22:47:10 escuelaing kernel: [    1.489838] intel_pstate: CPU model not supported
+Feb  9 22:47:10 escuelaing kernel: [    1.490158] ledtrig-cpu: registered to indicate activity on CPUs
+Feb  9 22:47:10 escuelaing kernel: [    1.490654] intel_pmc_core intel_pmc_core.0:  initialized
+Feb  9 22:47:10 escuelaing kernel: [    1.491233] NET: Registered protocol family 10
+Feb  9 22:47:10 escuelaing kernel: [    1.504280] Segment Routing with IPv6
+Feb  9 22:47:10 escuelaing kernel: [    1.504593] NET: Registered protocol family 17
+Feb  9 22:47:10 escuelaing kernel: [    1.504778] Key type dns_resolver registered
+Feb  9 22:47:10 escuelaing kernel: [    1.505419] RAS: Correctable Errors collector initialized.
+Feb  9 22:47:10 escuelaing kernel: [    1.505777] sched_clock: Marking stable (1448880006, 56379238)->(1502583824, 2675420)
+Feb  9 22:47:10 escuelaing kernel: [    1.506415] registered taskstats version 1
+Feb  9 22:47:10 escuelaing kernel: [    1.506710] Loading compiled-in X.509 certificates
+Feb  9 22:47:10 escuelaing kernel: [    1.509413] Loaded X.509 cert 'Build time autogenerated kernel key: e010219b5d6ca0f28448e71ca03baad031d32c9b'
+Feb  9 22:47:10 escuelaing kernel: [    1.510044] zswap: loaded using pool lzo/zbud
+Feb  9 22:47:10 escuelaing kernel: [    1.523031] Key type big_key registered
+Feb  9 22:47:10 escuelaing kernel: [    1.527958] Key type encrypted registered
+Feb  9 22:47:10 escuelaing kernel: [    1.528259] AppArmor: AppArmor sha1 policy hashing enabled
+Feb  9 22:47:10 escuelaing kernel: [    1.528606] ima: No TPM chip found, activating TPM-bypass!
+Feb  9 22:47:10 escuelaing kernel: [    1.529033] ima: Allocated hash algorithm: sha1
+Feb  9 22:47:10 escuelaing kernel: [    1.529342] No architecture policies found
+Feb  9 22:47:10 escuelaing kernel: [    1.529641] evm: Initialising EVM extended attributes:
+Feb  9 22:47:10 escuelaing kernel: [    1.529967] evm: security.selinux
+Feb  9 22:47:10 escuelaing kernel: [    1.530299] evm: security.SMACK64
+Feb  9 22:47:10 escuelaing kernel: [    1.530754] evm: security.SMACK64EXEC
+Feb  9 22:47:10 escuelaing kernel: [    1.531193] evm: security.SMACK64TRANSMUTE
+Feb  9 22:47:10 escuelaing kernel: [    1.531637] evm: security.SMACK64MMAP
+Feb  9 22:47:10 escuelaing kernel: [    1.532070] evm: security.apparmor
+Feb  9 22:47:10 escuelaing kernel: [    1.532906] evm: security.ima
+Feb  9 22:47:10 escuelaing kernel: [    1.533233] evm: security.capability
+Feb  9 22:47:10 escuelaing kernel: [    1.533600] evm: HMAC attrs: 0x1
+Feb  9 22:47:10 escuelaing kernel: [    1.534499] PM:   Magic number: 8:222:805
+Feb  9 22:47:10 escuelaing kernel: [    1.534959] rtc_cmos rtc_cmos: setting system clock to 2020-02-09T22:46:28 UTC (1581288388)
+Feb  9 22:47:10 escuelaing kernel: [    1.582920] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Feb  9 22:47:10 escuelaing kernel: [    1.584504] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Feb  9 22:47:10 escuelaing kernel: [    1.609577] sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Feb  9 22:47:10 escuelaing kernel: [    1.609961] cdrom: Uniform CD-ROM driver Revision: 3.20
+Feb  9 22:47:10 escuelaing kernel: [    1.610643] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Feb  9 22:47:10 escuelaing kernel: [    1.610782] sr 1:0:0:0: Attached scsi generic sg0 type 5
+Feb  9 22:47:10 escuelaing kernel: [    1.613233] Freeing unused decrypted memory: 2040K
+Feb  9 22:47:10 escuelaing kernel: [    1.614398] Freeing unused kernel image memory: 2668K
+Feb  9 22:47:10 escuelaing kernel: [    1.620775] Write protecting the kernel read-only data: 22528k
+Feb  9 22:47:10 escuelaing kernel: [    1.621767] Freeing unused kernel image memory: 2008K
+Feb  9 22:47:10 escuelaing kernel: [    1.622400] Freeing unused kernel image memory: 1416K
+Feb  9 22:47:10 escuelaing kernel: [    1.639717] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Feb  9 22:47:10 escuelaing kernel: [    1.640114] x86/mm: Checking user space page tables
+Feb  9 22:47:10 escuelaing kernel: [    1.656820] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Feb  9 22:47:10 escuelaing kernel: [    1.657214] Run /init as init process
+Feb  9 22:47:10 escuelaing kernel: [    1.811503] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Feb  9 22:47:10 escuelaing kernel: [    1.812744] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4
+Feb  9 22:47:10 escuelaing kernel: [    1.835140] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+Feb  9 22:47:10 escuelaing kernel: [    1.835558] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Feb  9 22:47:10 escuelaing kernel: [    1.842606] ahci 0000:00:0d.0: version 3.0
+Feb  9 22:47:10 escuelaing kernel: [    1.850173] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+Feb  9 22:47:10 escuelaing kernel: [    1.852943] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Feb  9 22:47:10 escuelaing kernel: [    1.853522] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+Feb  9 22:47:10 escuelaing kernel: [    1.854028] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Feb  9 22:47:10 escuelaing kernel: [    1.869035] scsi host2: ahci
+Feb  9 22:47:10 escuelaing kernel: [    1.869682] ata3: SATA max UDMA/133 abar m8192@0xf1806000 port 0xf1806100 irq 21
+Feb  9 22:47:10 escuelaing kernel: [    1.932671] usb 1-1: new full-speed USB device number 2 using ohci-pci
+Feb  9 22:47:10 escuelaing kernel: [    1.940465] cryptd: max_cpu_qlen set to 1000
+Feb  9 22:47:10 escuelaing kernel: [    2.046093] AVX2 version of gcm_enc/dec engaged.
+Feb  9 22:47:10 escuelaing kernel: [    2.046435] AES CTR mode by8 optimization enabled
+Feb  9 22:47:10 escuelaing kernel: [    2.065516] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+Feb  9 22:47:10 escuelaing kernel: [    2.110637] [drm] DMA map mode: Caching DMA mappings.
+Feb  9 22:47:10 escuelaing kernel: [    2.111073] [drm] Capabilities:
+Feb  9 22:47:10 escuelaing kernel: [    2.111332] [drm]   Cursor.
+Feb  9 22:47:10 escuelaing kernel: [    2.111564] [drm]   Cursor bypass 2.
+Feb  9 22:47:10 escuelaing kernel: [    2.111828] [drm]   Alpha cursor.
+Feb  9 22:47:10 escuelaing kernel: [    2.112079] [drm]   3D.
+Feb  9 22:47:10 escuelaing kernel: [    2.112297] [drm]   Extended Fifo.
+Feb  9 22:47:10 escuelaing kernel: [    2.112551] [drm]   Pitchlock.
+Feb  9 22:47:10 escuelaing kernel: [    2.112794] [drm]   Irq mask.
+Feb  9 22:47:10 escuelaing kernel: [    2.113031] [drm]   GMR.
+Feb  9 22:47:10 escuelaing kernel: [    2.113252] [drm]   Traces.
+Feb  9 22:47:10 escuelaing kernel: [    2.113561] [drm]   GMR2.
+Feb  9 22:47:10 escuelaing kernel: [    2.113864] [drm]   Screen Object 2.
+Feb  9 22:47:10 escuelaing kernel: [    2.114236] [drm] Max GMR ids is 8192
+Feb  9 22:47:10 escuelaing kernel: [    2.115121] [drm] Max number of GMR pages is 1048576
+Feb  9 22:47:10 escuelaing kernel: [    2.115492] [drm] Max dedicated hypervisor surface memory is 507904 kiB
+Feb  9 22:47:10 escuelaing kernel: [    2.116116] [drm] Maximum display memory size is 16384 kiB
+Feb  9 22:47:10 escuelaing kernel: [    2.116597] [drm] VRAM at 0xf0000000 size is 16384 kiB
+Feb  9 22:47:10 escuelaing kernel: [    2.117044] [drm] MMIO at 0xf1000000 size is 2048 kiB
+Feb  9 22:47:10 escuelaing kernel: [    2.148942] [TTM] Zone  kernel: Available graphics memory: 502382 KiB
+Feb  9 22:47:10 escuelaing kernel: [    2.149957] [TTM] Initializing pool allocator
+Feb  9 22:47:10 escuelaing kernel: [    2.150705] [TTM] Initializing DMA pool allocator
+Feb  9 22:47:10 escuelaing kernel: [    2.151052] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+Feb  9 22:47:10 escuelaing kernel: [    2.151453] [drm] No driver support for vblank timestamp query.
+Feb  9 22:47:10 escuelaing kernel: [    2.160915] [drm] Screen Objects Display Unit initialized
+Feb  9 22:47:10 escuelaing kernel: [    2.161379] [drm] width 720
+Feb  9 22:47:10 escuelaing kernel: [    2.161636] [drm] height 400
+Feb  9 22:47:10 escuelaing kernel: [    2.161893] [drm] bpp 32
+Feb  9 22:47:10 escuelaing kernel: [    2.162364] [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+Feb  9 22:47:10 escuelaing kernel: [    2.171861] [drm] DX: no.
+Feb  9 22:47:10 escuelaing kernel: [    2.173357] [drm] Atomic: yes.
+Feb  9 22:47:10 escuelaing kernel: [    2.174841] [drm] SM4_1: no.
+Feb  9 22:47:10 escuelaing kernel: [    2.184537] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Feb  9 22:47:10 escuelaing kernel: [    2.186682] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Feb  9 22:47:10 escuelaing kernel: [    2.188696] ata3.00: 20971520 sectors, multi 128: LBA48 NCQ (depth 32)
+Feb  9 22:47:10 escuelaing kernel: [    2.191395] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+Feb  9 22:47:10 escuelaing kernel: [    2.194906] ata3.00: configured for UDMA/133
+Feb  9 22:47:10 escuelaing kernel: [    2.197465] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Feb  9 22:47:10 escuelaing kernel: [    2.203243] sd 2:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+Feb  9 22:47:10 escuelaing kernel: [    2.206508] sd 2:0:0:0: Attached scsi generic sg1 type 0
+Feb  9 22:47:10 escuelaing kernel: [    2.214929] sd 2:0:0:0: [sda] Write Protect is off
+Feb  9 22:47:10 escuelaing kernel: [    2.218056] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Feb  9 22:47:10 escuelaing kernel: [    2.218207] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Feb  9 22:47:10 escuelaing kernel: [    2.222058] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+Feb  9 22:47:10 escuelaing kernel: [    2.257359] fbcon: svgadrmfb (fb0) is primary device
+Feb  9 22:47:10 escuelaing kernel: [    2.260752] Console: switching to colour frame buffer device 100x37
+Feb  9 22:47:10 escuelaing kernel: [    2.262663] [drm] Initialized vmwgfx 2.15.0 20180704 for 0000:00:02.0 on minor 0
+Feb  9 22:47:10 escuelaing kernel: [    2.271268] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Feb  9 22:47:10 escuelaing kernel: [    2.271331] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Feb  9 22:47:10 escuelaing kernel: [    2.271381] usb 1-1: Product: USB Tablet
+Feb  9 22:47:10 escuelaing kernel: [    2.271409] usb 1-1: Manufacturer: VirtualBox
+Feb  9 22:47:10 escuelaing kernel: [    2.301492]  sda: sda1 sda2
+Feb  9 22:47:10 escuelaing kernel: [    2.302021] sd 2:0:0:0: [sda] Attached SCSI disk
+Feb  9 22:47:10 escuelaing kernel: [    2.308080] hidraw: raw HID events driver (C) Jiri Kosina
+Feb  9 22:47:10 escuelaing kernel: [    2.337413] usbcore: registered new interface driver usbhid
+Feb  9 22:47:10 escuelaing kernel: [    2.337438] usbhid: USB HID core driver
+Feb  9 22:47:10 escuelaing kernel: [    2.340208] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+Feb  9 22:47:10 escuelaing kernel: [    2.346633] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Feb  9 22:47:10 escuelaing kernel: [    2.634996] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:f7:51:16
+Feb  9 22:47:10 escuelaing kernel: [    2.635609] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Feb  9 22:47:10 escuelaing kernel: [    2.637624] e1000 0000:00:03.0 enp0s3: renamed from eth0
+Feb  9 22:47:10 escuelaing kernel: [    3.328730] raid6: avx2x4   gen() 23158 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.376522] raid6: avx2x4   xor() 14611 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.424390] raid6: avx2x2   gen() 18604 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.472326] raid6: avx2x2   xor() 10332 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.520515] raid6: avx2x1   gen() 14909 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.568299] raid6: avx2x1   xor() 11246 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.616685] raid6: sse2x4   gen()  9096 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.664545] raid6: sse2x4   xor()  6008 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.712335] raid6: sse2x2   gen()  7338 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.760599] raid6: sse2x2   xor()  5083 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.808427] raid6: sse2x1   gen()  6834 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.856712] raid6: sse2x1   xor()  3943 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.857221] raid6: using algorithm avx2x4 gen() 23158 MB/s
+Feb  9 22:47:10 escuelaing kernel: [    3.857703] raid6: .... xor() 14611 MB/s, rmw enabled
+Feb  9 22:47:10 escuelaing kernel: [    3.858226] raid6: using avx2x2 recovery algorithm
+Feb  9 22:47:10 escuelaing kernel: [    3.860949] xor: automatically using best checksumming function   avx       
+Feb  9 22:47:10 escuelaing kernel: [    3.862699] async_tx: api initialized (async)
+Feb  9 22:47:10 escuelaing kernel: [    3.934182] Btrfs loaded, crc32c=crc32c-intel
+Feb  9 22:47:10 escuelaing kernel: [    4.231964] EXT4-fs (sda2): INFO: recovery required on readonly filesystem
+Feb  9 22:47:10 escuelaing kernel: [    4.232779] EXT4-fs (sda2): write access will be enabled during recovery
+Feb  9 22:47:10 escuelaing kernel: [    4.613145] EXT4-fs (sda2): recovery complete
+Feb  9 22:47:10 escuelaing kernel: [    4.918511] EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+Feb  9 22:47:10 escuelaing kernel: [   10.181816] systemd[1]: Inserted module 'autofs4'
+Feb  9 22:47:10 escuelaing kernel: [   10.525138] systemd[1]: systemd 242 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+Feb  9 22:47:10 escuelaing kernel: [   10.526661] systemd[1]: Detected virtualization oracle.
+Feb  9 22:47:10 escuelaing kernel: [   10.527130] systemd[1]: Detected architecture x86-64.
+Feb  9 22:47:10 escuelaing kernel: [   10.624914] systemd[1]: Set hostname to <escuelaing>.
+Feb  9 22:47:10 escuelaing kernel: [   10.656045] systemd[1]: Failed to bump fs.file-max, ignoring: Invalid argument
+Feb  9 22:47:10 escuelaing kernel: [   14.630262] systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:47:10 escuelaing kernel: [   15.732788] systemd[1]: Listening on udev Kernel Socket.
+Feb  9 22:47:10 escuelaing kernel: [   15.734755] systemd[1]: Created slice User and Session Slice.
+Feb  9 22:47:10 escuelaing kernel: [   15.736197] systemd[1]: Listening on LVM2 poll daemon socket.
+Feb  9 22:47:10 escuelaing kernel: [   15.737605] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Feb  9 22:47:10 escuelaing kernel: [   15.738944] systemd[1]: Reached target Slices.
+Feb  9 22:47:10 escuelaing kernel: [   15.740375] systemd[1]: Listening on udev Control Socket.
+Feb  9 22:47:10 escuelaing kernel: [   15.742041] systemd[1]: Listening on Journal Audit Socket.
+Feb  9 22:47:10 escuelaing kernel: [   15.743417] systemd[1]: Listening on initctl Compatibility Named Pipe.
+Feb  9 22:47:10 escuelaing kernel: [   15.744905] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Feb  9 22:47:10 escuelaing kernel: [   15.746592] systemd[1]: Listening on Journal Socket.
+Feb  9 22:47:10 escuelaing kernel: [   16.107870] EXT4-fs (sda2): re-mounted. Opts: (null)
+Feb  9 22:47:10 escuelaing kernel: [   17.131915] Adding 2008060k swap on /swap.img.  Priority:-2 extents:4 across:2401276k FS
+Feb  9 22:47:10 escuelaing kernel: [   17.277290] systemd-journald[403]: Received request to flush runtime journal from PID 1
+Feb  9 22:47:10 escuelaing kernel: [   17.411362] systemd-journald[403]: File /var/log/journal/c381fde3f09a492a890a6c8684ec2886/system.journal corrupted or uncleanly shut down, renaming and replacing.
+Feb  9 22:47:10 escuelaing kernel: [   19.438613] vboxguest: loading out-of-tree module taints kernel.
+Feb  9 22:47:10 escuelaing kernel: [   19.450512] vgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds
+Feb  9 22:47:10 escuelaing kernel: [   19.450730] input: Unspecified device as /devices/pci0000:00/0000:00:04.0/input/input7
+Feb  9 22:47:10 escuelaing kernel: [   19.451571] vboxguest: misc device minor 54, IRQ 20, I/O port d040, MMIO at 00000000f1400000 (size 0x400000)
+Feb  9 22:47:10 escuelaing kernel: [   19.451573] vboxguest: Successfully loaded version 6.0.14_Ubuntu (interface 0x00010004)
+Feb  9 22:47:10 escuelaing kernel: [   20.081542] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Feb  9 22:47:10 escuelaing kernel: [   22.352050] snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+Feb  9 22:47:10 escuelaing kernel: [   23.398731] alua: device handler registered
+Feb  9 22:47:10 escuelaing kernel: [   23.401150] emc: device handler registered
+Feb  9 22:47:10 escuelaing kernel: [   23.403682] rdac: device handler registered
+Feb  9 22:47:10 escuelaing kernel: [   25.018243] audit: type=1400 audit(1581288411.980:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=574 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.018247] audit: type=1400 audit(1581288411.980:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=574 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.074840] audit: type=1400 audit(1581288412.036:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=577 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.078986] audit: type=1400 audit(1581288412.040:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=578 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.082729] audit: type=1400 audit(1581288412.044:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=579 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.082733] audit: type=1400 audit(1581288412.044:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=579 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.090196] audit: type=1400 audit(1581288412.052:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=581 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.090200] audit: type=1400 audit(1581288412.052:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=581 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.090202] audit: type=1400 audit(1581288412.052:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=581 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   25.090204] audit: type=1400 audit(1581288412.052:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=581 comm="apparmor_parser"
+Feb  9 22:47:10 escuelaing kernel: [   36.184847] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Feb  9 22:47:10 escuelaing kernel: [   36.185423] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+Feb  9 22:47:10 escuelaing systemd[1]: Started System Logging Service.
+Feb  9 22:47:10 escuelaing rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="637" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Feb  9 22:47:10 escuelaing systemd[1]: Started Thermal Daemon Service.
+Feb  9 22:47:10 escuelaing systemd[1]: Starting Online ext4 Metadata Check for All Filesystems...
+Feb  9 22:47:10 escuelaing systemd[1]: Created slice system-getty.slice.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Getty on tty1.
+Feb  9 22:47:10 escuelaing systemd[1]: Reached target Login Prompts.
+Feb  9 22:47:10 escuelaing systemd[1]: Started Unattended Upgrades Shutdown.
+Feb  9 22:47:10 escuelaing systemd[1]: grub-initrd-fallback.service: Succeeded.
+Feb  9 22:47:10 escuelaing systemd[1]: Started GRUB failed boot detection.
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]NO RAPL sysfs present
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]22 CPUID levels; family:model:stepping 0x6:8e:9 (6:142:9)
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]Polling mode is enabled: 4
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]Thermal DTS: No coretemp sysfs found
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]sensor id 0 : No temp sysfs for reading raw temp
+Feb  9 22:47:10 escuelaing thermald[653]: message repeated 2 times: [ [WARN]sensor id 0 : No temp sysfs for reading raw temp]
+Feb  9 22:47:10 escuelaing systemd[1]: logrotate.service: Succeeded.
+Feb  9 22:47:10 escuelaing networkd-dispatcher[635]: No valid path found for iwconfig
+Feb  9 22:47:10 escuelaing systemd[1]: Started Rotate log files.
+Feb  9 22:47:10 escuelaing thermald[653]: I/O warning : failed to load external entity "/etc/thermald/thermal-conf.xml"
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]error: could not parse file /etc/thermald/thermal-conf.xml
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]sysfs open failed
+Feb  9 22:47:10 escuelaing thermald[653]: I/O warning : failed to load external entity "/etc/thermald/thermal-conf.xml"
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]error: could not parse file /etc/thermald/thermal-conf.xml
+Feb  9 22:47:10 escuelaing thermald[653]: [ERR]Thermal DTS or hwmon: No Zones present Need to configure manually
+Feb  9 22:47:10 escuelaing thermald[653]: I/O warning : failed to load external entity "/etc/thermald/thermal-conf.xml"
+Feb  9 22:47:10 escuelaing thermald[653]: [WARN]error: could not parse file /etc/thermald/thermal-conf.xml
+Feb  9 22:47:10 escuelaing thermald[653]: [ERR]No thermal sensors found
+Feb  9 22:47:10 escuelaing thermald[653]: [ERR]THD engine start failed
+Feb  9 22:47:11 escuelaing systemd[1]: thermald.service: Succeeded.
+Feb  9 22:47:11 escuelaing systemd[1]: tmp-snap.rootfs_inzNMt.mount: Succeeded.
+Feb  9 22:47:11 escuelaing systemd[1]: Started Dispatcher daemon for systemd-networkd.
+Feb  9 22:47:12 escuelaing systemd[1]: e2scrub_all.service: Succeeded.
+Feb  9 22:47:12 escuelaing systemd[1]: Started Online ext4 Metadata Check for All Filesystems.
+Feb  9 22:47:13 escuelaing systemd[1]: dmesg.service: Succeeded.
+Feb  9 22:47:13 escuelaing dbus-daemon[647]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.8' (uid=0 pid=659 comm="/usr/lib/accountsservice/accounts-daemon " label="unconfined")
+Feb  9 22:47:14 escuelaing systemd[1]: Starting Authorization Manager...
+Feb  9 22:47:14 escuelaing snapd[663]: AppArmor status: apparmor is enabled and all features are available
+Feb  9 22:47:14 escuelaing polkitd[749]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Feb  9 22:47:14 escuelaing dbus-daemon[647]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Feb  9 22:47:14 escuelaing systemd[1]: Started Authorization Manager.
+Feb  9 22:47:14 escuelaing accounts-daemon[659]: started daemon version 0.6.55
+Feb  9 22:47:14 escuelaing systemd[1]: Started Accounts Service.
+Feb  9 22:47:15 escuelaing lxd.activate[652]: => Starting LXD activation
+Feb  9 22:47:15 escuelaing lxd.activate[652]: ==> Loading snap configuration
+Feb  9 22:47:15 escuelaing lxd.activate[652]: ==> Checking for socket activation support
+Feb  9 22:47:16 escuelaing lxd.activate[652]: ==> Setting LXD socket ownership
+Feb  9 22:47:16 escuelaing lxd.activate[652]: ==> LXD never started on this system, no need to start it now
+Feb  9 22:47:16 escuelaing systemd[1]: snap.lxd.activate.service: Succeeded.
+Feb  9 22:47:16 escuelaing systemd[1]: Started Service for snap application lxd.activate.
+Feb  9 22:47:17 escuelaing snapd[663]: AppArmor status: apparmor is enabled and all features are available
+Feb  9 22:47:19 escuelaing snapd[663]: daemon.go:346: started snapd/2.42 (series 16; classic) ubuntu/19.10 (amd64) linux/5.3.0-29-generic.
+Feb  9 22:47:19 escuelaing systemd[1]: tmp-sanity\x2dmountpoint\x2d537984970.mount: Succeeded.
+Feb  9 22:47:19 escuelaing snapd[663]: daemon.go:439: adjusting startup timeout by 40s (pessimistic estimate of 30s plus 5s per snap)
+Feb  9 22:47:19 escuelaing systemd[1]: Started Snappy daemon.
+Feb  9 22:47:19 escuelaing systemd[1]: Starting Wait until snapd is fully seeded...
+Feb  9 22:47:19 escuelaing systemd[1]: Started Wait until snapd is fully seeded.
+Feb  9 22:47:19 escuelaing systemd[1]: Starting Apply the settings specified in cloud-config...
+Feb  9 22:47:19 escuelaing systemd[1]: Condition check resulted in Auto import assertions from block devices being skipped.
+Feb  9 22:47:19 escuelaing systemd[1]: Reached target Multi-User System.
+Feb  9 22:47:19 escuelaing systemd[1]: Reached target Graphical Interface.
+Feb  9 22:47:19 escuelaing systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Feb  9 22:47:19 escuelaing systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Feb  9 22:47:19 escuelaing systemd[1]: Started Update UTMP about System Runlevel Changes.
+Feb  9 22:47:21 escuelaing cloud-init[802]: Cloud-init v. 19.2-36-g059d049c-0ubuntu3 running 'modules:config' at Sun, 09 Feb 2020 22:47:20 +0000. Up 53.70 seconds.
+Feb  9 22:47:21 escuelaing systemd[1]: Started Apply the settings specified in cloud-config.
+Feb  9 22:47:21 escuelaing systemd[1]: Starting Execute cloud user/final scripts...
+Feb  9 22:47:23 escuelaing systemd[1]: man-db.service: Succeeded.
+Feb  9 22:47:23 escuelaing systemd[1]: Started Daily man-db regeneration.
+Feb  9 22:47:23 escuelaing cloud-init[810]: Cloud-init v. 19.2-36-g059d049c-0ubuntu3 running 'modules:final' at Sun, 09 Feb 2020 22:47:22 +0000. Up 55.24 seconds.
+Feb  9 22:47:23 escuelaing cloud-init[810]: Cloud-init v. 19.2-36-g059d049c-0ubuntu3 finished at Sun, 09 Feb 2020 22:47:23 +0000. Datasource DataSourceNoCloud [seed=/var/lib/cloud/seed/nocloud-net][dsmode=net].  Up 56.05 seconds
+Feb  9 22:47:23 escuelaing systemd[1]: Started Execute cloud user/final scripts.
+Feb  9 22:47:23 escuelaing systemd[1]: Reached target Cloud-init target.
+Feb  9 22:47:23 escuelaing systemd[1]: Startup finished in 9.456s (kernel) + 46.771s (userspace) = 56.228s.
+Feb  9 22:47:36 escuelaing systemd-timesyncd[576]: Synchronized to time server for the first time 91.189.89.199:123 (ntp.ubuntu.com).
+Feb  9 22:47:57 escuelaing systemd[1]: Reloading.
+Feb  9 22:47:59 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:47:59 escuelaing systemd[1]: getty@tty1.service: Current command vanished from the unit file, execution of the command list won't be resumed.
+Feb  9 22:47:59 escuelaing systemd[1]: Mounting Mount unit for core, revision 8268...
+Feb  9 22:47:59 escuelaing systemd[1]: Mounted Mount unit for core, revision 8268.
+Feb  9 22:48:01 escuelaing systemd[1]: Created slice User Slice of UID 1000.
+Feb  9 22:48:01 escuelaing systemd[1]: Starting User Runtime Directory /run/user/1000...
+Feb  9 22:48:01 escuelaing systemd[1]: Started User Runtime Directory /run/user/1000.
+Feb  9 22:48:01 escuelaing systemd[1]: Starting User Manager for UID 1000...
+Feb  9 22:48:03 escuelaing systemd[986]: Reached target Timers.
+Feb  9 22:48:04 escuelaing systemd[986]: Starting D-Bus User Message Bus Socket.
+Feb  9 22:48:04 escuelaing systemd[986]: Listening on GnuPG network certificate management daemon.
+Feb  9 22:48:04 escuelaing systemd[986]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Feb  9 22:48:04 escuelaing systemd[986]: Listening on debconf communication socket.
+Feb  9 22:48:05 escuelaing systemd[986]: Listening on REST API socket for snapd user session agent.
+Feb  9 22:48:05 escuelaing systemd[986]: Reached target Paths.
+Feb  9 22:48:05 escuelaing systemd[986]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Feb  9 22:48:05 escuelaing systemd[986]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Feb  9 22:48:05 escuelaing systemd[986]: Listening on GnuPG cryptographic agent and passphrase cache.
+Feb  9 22:48:05 escuelaing systemd[986]: Listening on D-Bus User Message Bus Socket.
+Feb  9 22:48:05 escuelaing systemd[986]: Reached target Sockets.
+Feb  9 22:48:05 escuelaing systemd[986]: Reached target Basic System.
+Feb  9 22:48:05 escuelaing systemd[1]: Started User Manager for UID 1000.
+Feb  9 22:48:05 escuelaing systemd[1]: Started Session 1 of user alejandroybrayan.
+Feb  9 22:48:05 escuelaing systemd[986]: Reached target Main User Target.
+Feb  9 22:48:05 escuelaing systemd[986]: Startup finished in 2.055s.
+Feb  9 22:48:10 escuelaing kernel: [  101.850362] kauditd_printk_skb: 18 callbacks suppressed
+Feb  9 22:48:10 escuelaing kernel: [  101.850364] audit: type=1400 audit(1581288490.149:30): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/8268/usr/lib/snapd/snap-confine" pid=1019 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  101.850779] audit: type=1400 audit(1581288490.149:31): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/8268/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1019 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.086148] audit: type=1400 audit(1581288490.385:32): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.core.hook.configure" pid=1026 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.091205] audit: type=1400 audit(1581288490.389:33): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=1028 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.351387] audit: type=1400 audit(1581288490.649:34): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.lxd" pid=1030 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.354526] audit: type=1400 audit(1581288490.653:35): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.activate" pid=1031 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.357621] audit: type=1400 audit(1581288490.657:36): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.benchmark" pid=1032 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.360762] audit: type=1400 audit(1581288490.661:37): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.buginfo" pid=1033 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.363489] audit: type=1400 audit(1581288490.661:38): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.check-kernel" pid=1034 comm="apparmor_parser"
+Feb  9 22:48:10 escuelaing kernel: [  102.367063] audit: type=1400 audit(1581288490.665:39): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.daemon" pid=1035 comm="apparmor_parser"
+Feb  9 22:48:11 escuelaing snapd[663]: daemon.go:540: gracefully waiting for running hooks
+Feb  9 22:48:11 escuelaing snapd[663]: daemon.go:542: done waiting for running hooks
+Feb  9 22:48:11 escuelaing systemd[1]: snapd.service: Succeeded.
+Feb  9 22:48:11 escuelaing systemd[1]: snapd.service: Service RestartSec=100ms expired, scheduling restart.
+Feb  9 22:48:11 escuelaing systemd[1]: snapd.service: Scheduled restart job, restart counter is at 1.
+Feb  9 22:48:11 escuelaing systemd[1]: Stopped Snappy daemon.
+Feb  9 22:48:11 escuelaing systemd[1]: Starting Snappy daemon...
+Feb  9 22:48:11 escuelaing snapd[1052]: AppArmor status: apparmor is enabled and all features are available
+Feb  9 22:48:12 escuelaing snapd[1052]: AppArmor status: apparmor is enabled and all features are available
+Feb  9 22:48:12 escuelaing snapd[1052]: patch.go:64: Patching system state level 6 to sublevel 1...
+Feb  9 22:48:12 escuelaing snapd[1052]: patch.go:64: Patching system state level 6 to sublevel 2...
+Feb  9 22:48:12 escuelaing snapd[1052]: daemon.go:346: started snapd/2.42.5 (series 16; classic) ubuntu/19.10 (amd64) linux/5.3.0-29-generic.
+Feb  9 22:48:12 escuelaing systemd[986]: tmp-sanity\x2dmountpoint\x2d096972707.mount: Succeeded.
+Feb  9 22:48:12 escuelaing snapd[1052]: daemon.go:439: adjusting startup timeout by 40s (pessimistic estimate of 30s plus 5s per snap)
+Feb  9 22:48:15 escuelaing kernel: [  107.069724] kauditd_printk_skb: 9 callbacks suppressed
+Feb  9 22:48:15 escuelaing kernel: [  107.069726] audit: type=1400 audit(1581288495.369:49): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.lxd" pid=1135 comm="apparmor_parser"
+Feb  9 22:48:15 escuelaing kernel: [  107.231505] audit: type=1400 audit(1581288495.529:50): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.activate" pid=1136 comm="apparmor_parser"
+Feb  9 22:48:15 escuelaing kernel: [  107.395050] audit: type=1400 audit(1581288495.693:51): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.benchmark" pid=1137 comm="apparmor_parser"
+Feb  9 22:48:15 escuelaing kernel: [  107.558608] audit: type=1400 audit(1581288495.857:52): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.buginfo" pid=1138 comm="apparmor_parser"
+Feb  9 22:48:16 escuelaing kernel: [  107.761292] audit: type=1400 audit(1581288496.061:53): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.check-kernel" pid=1139 comm="apparmor_parser"
+Feb  9 22:48:16 escuelaing kernel: [  108.023023] audit: type=1400 audit(1581288496.321:54): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.daemon" pid=1140 comm="apparmor_parser"
+Feb  9 22:48:16 escuelaing kernel: [  108.220439] audit: type=1400 audit(1581288496.521:55): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.hook.configure" pid=1141 comm="apparmor_parser"
+Feb  9 22:48:16 escuelaing kernel: [  108.371565] audit: type=1400 audit(1581288496.669:56): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.hook.install" pid=1142 comm="apparmor_parser"
+Feb  9 22:48:16 escuelaing kernel: [  108.544468] audit: type=1400 audit(1581288496.845:57): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.lxc" pid=1143 comm="apparmor_parser"
+Feb  9 22:48:17 escuelaing kernel: [  108.707912] audit: type=1400 audit(1581288497.009:58): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.lxd" pid=1144 comm="apparmor_parser"
+Feb  9 22:48:17 escuelaing systemd[1]: Started Snappy daemon.
+Feb  9 22:48:44 escuelaing systemd[1]: Reloading.
+Feb  9 22:48:46 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:48:46 escuelaing systemd[1]: Mounting Mount unit for lxd, revision 13300...
+Feb  9 22:48:46 escuelaing systemd[1]: Mounted Mount unit for lxd, revision 13300.
+Feb  9 22:48:51 escuelaing systemd[1]: snap.lxd.daemon.unix.socket: Succeeded.
+Feb  9 22:48:51 escuelaing systemd[1]: Closed Socket unix for snap application lxd.daemon.
+Feb  9 22:48:53 escuelaing systemd[1]: Reloading.
+Feb  9 22:48:53 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:48:57 escuelaing kernel: [  149.412110] kauditd_printk_skb: 1 callbacks suppressed
+Feb  9 22:48:57 escuelaing kernel: [  149.412112] audit: type=1400 audit(1581288537.710:60): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.activate" pid=1308 comm="apparmor_parser"
+Feb  9 22:48:57 escuelaing kernel: [  149.583148] audit: type=1400 audit(1581288537.882:61): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.benchmark" pid=1309 comm="apparmor_parser"
+Feb  9 22:48:58 escuelaing kernel: [  149.747432] audit: type=1400 audit(1581288538.046:62): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.buginfo" pid=1310 comm="apparmor_parser"
+Feb  9 22:48:58 escuelaing kernel: [  149.910292] audit: type=1400 audit(1581288538.206:63): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.check-kernel" pid=1311 comm="apparmor_parser"
+Feb  9 22:48:58 escuelaing kernel: [  150.158463] audit: type=1400 audit(1581288538.454:64): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.daemon" pid=1312 comm="apparmor_parser"
+Feb  9 22:48:58 escuelaing kernel: [  150.354318] audit: type=1400 audit(1581288538.650:65): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.hook.configure" pid=1313 comm="apparmor_parser"
+Feb  9 22:48:58 escuelaing kernel: [  150.502526] audit: type=1400 audit(1581288538.798:66): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.hook.install" pid=1314 comm="apparmor_parser"
+Feb  9 22:48:58 escuelaing kernel: [  150.675197] audit: type=1400 audit(1581288538.974:67): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.lxc" pid=1315 comm="apparmor_parser"
+Feb  9 22:48:59 escuelaing kernel: [  150.846731] audit: type=1400 audit(1581288539.142:68): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.lxd" pid=1316 comm="apparmor_parser"
+Feb  9 22:48:59 escuelaing kernel: [  151.023266] audit: type=1400 audit(1581288539.322:69): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.lxd.migrate" pid=1317 comm="apparmor_parser"
+Feb  9 22:48:59 escuelaing systemd[1]: Reloading.
+Feb  9 22:49:00 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:49:01 escuelaing systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Feb  9 22:49:01 escuelaing systemd[1]: Starting Service for snap application lxd.activate...
+Feb  9 22:49:01 escuelaing systemd[1]: run-snapd-ns-lxd.mnt.mount: Succeeded.
+Feb  9 22:49:01 escuelaing systemd[986]: run-snapd-ns-lxd.mnt.mount: Succeeded.
+Feb  9 22:49:01 escuelaing systemd[986]: tmp-snap.rootfs_NtoFxv.mount: Succeeded.
+Feb  9 22:49:01 escuelaing systemd[1]: tmp-snap.rootfs_NtoFxv.mount: Succeeded.
+Feb  9 22:49:02 escuelaing lxd.activate[1366]: => Starting LXD activation
+Feb  9 22:49:02 escuelaing lxd.activate[1366]: ==> Loading snap configuration
+Feb  9 22:49:02 escuelaing lxd.activate[1366]: ==> Checking for socket activation support
+Feb  9 22:49:02 escuelaing lxd.activate[1366]: ==> Setting LXD socket ownership
+Feb  9 22:49:02 escuelaing lxd.activate[1366]: ==> LXD never started on this system, no need to start it now
+Feb  9 22:49:02 escuelaing systemd[1]: snap.lxd.activate.service: Succeeded.
+Feb  9 22:49:02 escuelaing systemd[1]: Started Service for snap application lxd.activate.
+Feb  9 22:49:04 escuelaing snapd[1052]: storehelpers.go:436: cannot refresh: snap has no updates available: "core", "lxd"
+Feb  9 22:55:09 escuelaing dbus-daemon[647]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.28' (uid=0 pid=1762 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Feb  9 22:55:10 escuelaing systemd[1]: Starting PackageKit Daemon...
+Feb  9 22:55:10 escuelaing PackageKit: daemon start
+Feb  9 22:55:11 escuelaing dbus-daemon[647]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Feb  9 22:55:11 escuelaing systemd[1]: Started PackageKit Daemon.
+Feb  9 22:55:23 escuelaing systemd-resolved[619]: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.
+Feb  9 22:57:49 escuelaing systemd[1]: Reloading.
+Feb  9 22:57:51 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:57:51 escuelaing systemd[1]: Reloading.
+Feb  9 22:57:52 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:57:52 escuelaing systemd[1]: Started Self Monitoring and Reporting Technology (SMART) Daemon.
+Feb  9 22:57:52 escuelaing systemd[1]: Reloading.
+Feb  9 22:57:53 escuelaing smartd[2209]: smartd 7.0 2018-12-30 r4883 [x86_64-linux-5.3.0-29-generic] (local build)
+Feb  9 22:57:53 escuelaing smartd[2209]: Copyright (C) 2002-18, Bruce Allen, Christian Franke, www.smartmontools.org
+Feb  9 22:57:53 escuelaing smartd[2209]: Opened configuration file /etc/smartd.conf
+Feb  9 22:57:53 escuelaing smartd[2209]: Drive: DEVICESCAN, implied '-a' Directive on line 21 of file /etc/smartd.conf
+Feb  9 22:57:53 escuelaing smartd[2209]: Configuration file /etc/smartd.conf was parsed, found DEVICESCAN, scanning devices
+Feb  9 22:57:53 escuelaing smartd[2209]: Device: /dev/sda, type changed from 'scsi' to 'sat'
+Feb  9 22:57:53 escuelaing smartd[2209]: Device: /dev/sda [SAT], opened
+Feb  9 22:57:53 escuelaing smartd[2209]: Device: /dev/sda [SAT], VBOX HARDDISK, S/N:VB9e0cc1b6-d473c68c, FW:1.0, 10.7 GB
+Feb  9 22:57:53 escuelaing smartd[2209]: Device: /dev/sda [SAT], not found in smartd database.
+Feb  9 22:57:53 escuelaing smartd[2209]: Device: /dev/sda [SAT], lacks SMART capability
+Feb  9 22:57:53 escuelaing smartd[2209]: Device: /dev/sda [SAT], to proceed anyway, use '-T permissive' Directive.
+Feb  9 22:57:53 escuelaing smartd[2209]: Unable to monitor any SMART enabled devices. Try debug (-d) option. Exiting...
+Feb  9 22:57:54 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:57:54 escuelaing systemd[1]: smartd.service: Main process exited, code=exited, status=17/n/a
+Feb  9 22:57:54 escuelaing systemd[1]: smartd.service: Failed with result 'exit-code'.
+Feb  9 22:57:54 escuelaing systemd[1]: Reloading.
+Feb  9 22:57:55 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:57:55 escuelaing systemd[1]: Started Self Monitoring and Reporting Technology (SMART) Daemon.
+Feb  9 22:57:56 escuelaing smartd[2306]: smartd 7.0 2018-12-30 r4883 [x86_64-linux-5.3.0-29-generic] (local build)
+Feb  9 22:57:56 escuelaing smartd[2306]: Copyright (C) 2002-18, Bruce Allen, Christian Franke, www.smartmontools.org
+Feb  9 22:57:56 escuelaing smartd[2306]: Opened configuration file /etc/smartd.conf
+Feb  9 22:57:56 escuelaing smartd[2306]: Drive: DEVICESCAN, implied '-a' Directive on line 21 of file /etc/smartd.conf
+Feb  9 22:57:56 escuelaing smartd[2306]: Configuration file /etc/smartd.conf was parsed, found DEVICESCAN, scanning devices
+Feb  9 22:57:56 escuelaing smartd[2306]: Device: /dev/sda, type changed from 'scsi' to 'sat'
+Feb  9 22:57:56 escuelaing smartd[2306]: Device: /dev/sda [SAT], opened
+Feb  9 22:57:56 escuelaing smartd[2306]: Device: /dev/sda [SAT], VBOX HARDDISK, S/N:VB9e0cc1b6-d473c68c, FW:1.0, 10.7 GB
+Feb  9 22:57:56 escuelaing smartd[2306]: Device: /dev/sda [SAT], not found in smartd database.
+Feb  9 22:57:56 escuelaing smartd[2306]: Device: /dev/sda [SAT], lacks SMART capability
+Feb  9 22:57:56 escuelaing smartd[2306]: Device: /dev/sda [SAT], to proceed anyway, use '-T permissive' Directive.
+Feb  9 22:57:56 escuelaing smartd[2306]: Unable to monitor any SMART enabled devices. Try debug (-d) option. Exiting...
+Feb  9 22:57:56 escuelaing systemd[1]: smartd.service: Main process exited, code=exited, status=17/n/a
+Feb  9 22:57:56 escuelaing systemd[1]: smartd.service: Failed with result 'exit-code'.
+Feb  9 22:58:05 escuelaing systemd[1]: Reloading.
+Feb  9 22:58:06 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:58:06 escuelaing systemd[1]: Starting Daily apt upgrade and clean activities...
+Feb  9 22:58:06 escuelaing systemd[1]: Reloading.
+Feb  9 22:58:07 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:58:07 escuelaing systemd[1]: Reloading.
+Feb  9 22:58:07 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:58:07 escuelaing systemd[1]: Created slice system-postfix.slice.
+Feb  9 22:58:07 escuelaing systemd[1]: Starting Postfix Mail Transport Agent (instance -)...
+Feb  9 22:58:08 escuelaing systemd[1]: apt-daily-upgrade.service: Succeeded.
+Feb  9 22:58:08 escuelaing systemd[1]: Started Daily apt upgrade and clean activities.
+Feb  9 22:58:08 escuelaing postfix/postfix-script[2859]: starting the Postfix mail system
+Feb  9 22:58:08 escuelaing postfix/master[2861]: daemon started -- version 3.4.5, configuration /etc/postfix
+Feb  9 22:58:08 escuelaing systemd[1]: Started Postfix Mail Transport Agent (instance -).
+Feb  9 22:58:08 escuelaing systemd[1]: Starting Postfix Mail Transport Agent...
+Feb  9 22:58:08 escuelaing systemd[1]: Started Postfix Mail Transport Agent.
+Feb  9 22:58:09 escuelaing systemd[1]: Reloading.
+Feb  9 22:58:09 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+Feb  9 22:58:10 escuelaing systemd[1]: Stopping System Logging Service...
+Feb  9 22:58:10 escuelaing rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="637" x-info="https://www.rsyslog.com"] exiting on signal 15.
+Feb  9 22:58:10 escuelaing systemd[1]: rsyslog.service: Succeeded.
+Feb  9 22:58:10 escuelaing systemd[1]: Stopped System Logging Service.
+Feb  9 22:58:10 escuelaing systemd[1]: Starting System Logging Service...
+Feb  9 22:58:10 escuelaing rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.1901.0]
+Feb  9 22:58:10 escuelaing systemd[1]: Started System Logging Service.
+Feb  9 22:58:10 escuelaing rsyslogd: rsyslogd's groupid changed to 110
+Feb  9 22:58:10 escuelaing rsyslogd: rsyslogd's userid changed to 104
+Feb  9 22:58:10 escuelaing rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="2921" x-info="https://www.rsyslog.com"] start
+Feb  9 22:58:10 escuelaing systemd[1]: Reloading.
+Feb  9 22:58:11 escuelaing systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.

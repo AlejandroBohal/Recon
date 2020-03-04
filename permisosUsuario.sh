@@ -1,11 +1,11 @@
 #!/bin/bash
 echo introduza usuario y directorio
 read usuario directorio
-l=()
-le=()
-lee=()
-w=()
-x=()
+declare -a l=()
+declare -a le=()
+declare -a lee=()
+declare -a w=()
+declare -a x=()
 verPermisos(){
 	if [ $1 -eq '7' ]
 	then  
