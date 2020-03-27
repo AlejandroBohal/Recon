@@ -1,7 +1,7 @@
 #!/bin/bash
 echo '============================================================================'
 echo 'Programacion de tarea snapshot uso ram y cpu'
-cronjob="sh /root/RecoSlack/lab4/snapshot.sh"
+cronjob="sh /root/Recon/lab4/snapshot.sh"
 echo ''
 echo 'Para programar esta tarea se usara crontab, se repetirá periodicamente'
 echo 'Segun rangos establecidos en 5 caracteres introducidos seguidos por espacio'

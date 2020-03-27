@@ -19,15 +19,15 @@ do
 	case "$numMenu" in
 		1)
 			clear
-			bash crontabBackup.sh
+			bash crontabBackups.sh
 			;;
 		2)
 			clear
-			bash crontabSnapshot.sh
+			bash crontabSnapshots.sh
 			;;
 		3)
 			clear
-			bash crontabPuertos.sh
+			bash crontabPuertoss.sh
 			;;
 		
 		4)
